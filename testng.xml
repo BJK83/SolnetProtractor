@@ -15,6 +15,7 @@
 			<class name="solnetTests.AddRemoveTasksTest" />
 			<class name="solnetTests.ValidateLandingPageTest" />
 			<class name="solnetTests.AddTasksDataDrivenTest" />
+			<class name="solnetTests.ValidateAllTasksPage" />
 			<class name="solnetTests.MarkTaskCompleteTest" />
 		</classes>
 	</test> <!-- Test -->

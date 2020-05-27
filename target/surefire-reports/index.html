@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Solnet_AngularTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task4, last task, Today, No)">addRemoveTasks(task4, last task, Today, No)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task2, second task, Today, Yes)">addRemoveTasks(task2, second task, Today, Yes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task1, first task, JUN-15, Yes)">addRemoveTasks(task1, first task, JUN-15, Yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,17 +117,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task2, second task, Today, Yes)">addRemoveTasks(task2, second task, Today, Yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task4, last task, Today, No)">addRemoveTasks(task4, last task, Today, No)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddRemoveTasksTest" class="method navigator-link" hash-for-method="addRemoveTasks">addRemoveTasks</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Solnet_AngularTests" title="solnetTests.AddTasksDataDrivenTest" class="method navigator-link" hash-for-method="addRemoveTasks(task1, first task, JUN-15, Yes)">addRemoveTasks(task1, first task, JUN-15, Yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -205,22 +205,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addRemoveTasks(task4, last task, Today, No)">
-                  </a> <!-- addRemoveTasks(task4, last task, Today, No) -->
-                  <span class="method-name">addRemoveTasks</span>
-                  <span class="parameters">(task4, last task, Today, No)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addRemoveTasks(task3, third task, JUN-25, No)">
-                  </a> <!-- addRemoveTasks(task3, third task, JUN-25, No) -->
-                  <span class="method-name">addRemoveTasks</span>
-                  <span class="parameters">(task3, third task, JUN-25, No)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="addRemoveTasks(task2, second task, Today, Yes)">
                   </a> <!-- addRemoveTasks(task2, second task, Today, Yes) -->
                   <span class="method-name">addRemoveTasks</span>
@@ -233,6 +217,22 @@
                   </a> <!-- addRemoveTasks(task1, first task, JUN-15, Yes) -->
                   <span class="method-name">addRemoveTasks</span>
                   <span class="parameters">(task1, first task, JUN-15, Yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRemoveTasks(task3, third task, JUN-25, No)">
+                  </a> <!-- addRemoveTasks(task3, third task, JUN-25, No) -->
+                  <span class="method-name">addRemoveTasks</span>
+                  <span class="parameters">(task3, third task, JUN-25, No)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRemoveTasks(task4, last task, Today, No)">
+                  </a> <!-- addRemoveTasks(task4, last task, Today, No) -->
+                  <span class="method-name">addRemoveTasks</span>
+                  <span class="parameters">(task4, last task, Today, No)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,6 +276,7 @@
       &lt;class name=&quot;solnetTests.AddRemoveTasksTest&quot;/&gt;
       &lt;class name=&quot;solnetTests.ValidateLandingPageTest&quot;/&gt;
       &lt;class name=&quot;solnetTests.AddTasksDataDrivenTest&quot;/&gt;
+      &lt;class name=&quot;solnetTests.ValidateAllTasksPage&quot;/&gt;
       &lt;class name=&quot;solnetTests.MarkTaskCompleteTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -290,7 +291,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -376,40 +377,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addRemoveTasks')
 data.setCell(0, 2, 'solnetTests.AddRemoveTasksTest')
-data.setCell(0, 3, 4254);
+data.setCell(0, 3, 3513);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'markTaskCompleteTest')
 data.setCell(1, 2, 'solnetTests.MarkTaskCompleteTest')
-data.setCell(1, 3, 3411);
+data.setCell(1, 3, 2779);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addRemoveTasks')
 data.setCell(2, 2, 'solnetTests.AddTasksDataDrivenTest')
-data.setCell(2, 3, 1684);
+data.setCell(2, 3, 1779);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'addRemoveTasks')
 data.setCell(3, 2, 'solnetTests.AddTasksDataDrivenTest')
-data.setCell(3, 3, 1627);
+data.setCell(3, 3, 1610);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addRemoveTasks')
 data.setCell(4, 2, 'solnetTests.AddTasksDataDrivenTest')
-data.setCell(4, 3, 1102);
+data.setCell(4, 3, 1103);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'addRemoveTasks')
 data.setCell(5, 2, 'solnetTests.AddTasksDataDrivenTest')
-data.setCell(5, 3, 838);
+data.setCell(5, 3, 917);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'validateLandingPage')
 data.setCell(6, 2, 'solnetTests.ValidateLandingPageTest')
-data.setCell(6, 3, 674);
+data.setCell(6, 3, 641);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'loginToTheApplication')
 data.setCell(7, 2, 'solnetTests.LoginToTheApplicationTest')
-data.setCell(7, 3, 604);
+data.setCell(7, 3, 596);
 window.suiteTableData['Solnet_AngularTests']= { tableData: data, tableDiv: 'times-div-Solnet_AngularTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Solnet_AngularTests">
               </div> <!-- times-div-Solnet_AngularTests -->
             </div> <!-- times-div -->
@@ -424,7 +425,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Solnet_AngularTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -445,6 +446,13 @@ return data;
               <span class="ignored-class-name">solnetTests.MarkTaskCompleteTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">solnetTests.ValidateAllTasksPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateAllTasksPage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -470,111 +478,111 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginToTheApplication</span>
-                <span class="method-start">9034 ms</span>
+                <span class="method-start">8708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">9643 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">solnetTests.AddRemoveTasksTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">14361 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addRemoveTasks</span>
-                <span class="method-start">22086 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">26341 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">solnetTests.ValidateLandingPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">30999 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateLandingPage</span>
-                <span class="method-start">38734 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">39408 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">solnetTests.AddTasksDataDrivenTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">40214 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addRemoveTasks(task1, first task, JUN-15, Yes)</span>
-                <span class="method-start">47792 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">49477 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">51409 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addRemoveTasks(task2, second task, Today, Yes)</span>
-                <span class="method-start">60117 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">61220 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">61932 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addRemoveTasks(task3, third task, JUN-25, No)</span>
-                <span class="method-start">69755 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">71382 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">72560 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addRemoveTasks(task4, last task, Today, No)</span>
-                <span class="method-start">80266 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">81104 ms</span>
+                <span class="method-start">9308 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">solnetTests.MarkTaskCompleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">81901 ms</span>
+                <span class="method-start">10223 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">markTaskCompleteTest</span>
-                <span class="method-start">89635 ms</span>
+                <span class="method-start">18030 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">93046 ms</span>
+                <span class="method-start">20810 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">solnetTests.AddRemoveTasksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveTasks</span>
+                <span class="method-start">33322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">36835 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">solnetTests.ValidateLandingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">37642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLandingPage</span>
+                <span class="method-start">45172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">45813 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">solnetTests.AddTasksDataDrivenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">46506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveTasks(task1, first task, JUN-15, Yes)</span>
+                <span class="method-start">54141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">55752 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">56639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveTasks(task2, second task, Today, Yes)</span>
+                <span class="method-start">64969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">66072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">66851 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveTasks(task3, third task, JUN-25, No)</span>
+                <span class="method-start">75184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">76963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">77875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addRemoveTasks(task4, last task, Today, No)</span>
+                <span class="method-start">85782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">86700 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
