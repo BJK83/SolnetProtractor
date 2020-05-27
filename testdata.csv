@@ -1,0 +1,5 @@
+taskTitle,taskDescription,taskDueDate,isImportant
+task1,first task,05 June 2020,Yes
+task2,second task,Today,Yes
+task3,third task,11 June 2020,No
+task4,last task,Today,No

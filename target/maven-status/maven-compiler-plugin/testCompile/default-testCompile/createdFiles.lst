@@ -1,0 +1,6 @@
+solnetTests\MarkTaskCompleteTest.class
+solnetTests\LoginToTheApplicationTest.class
+solnetTests\ValidateLandingPageTest.class
+solnetTests\AddTasksDataDrivenTest.class
+solnetTests\AddRemoveTasksTest.class
+solnetTests\ValidateAllTasksPage.class

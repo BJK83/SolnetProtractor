@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="12" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-27T22:54:15 NZST" name="Solnet_AngularTests" finished-at="2020-05-27T22:55:35 NZST" duration-ms="79801">
+    <groups>
+      <group name="regression">
+        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
+        <method signature="AddTasksDataDrivenTest.addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" name="addRemoveTasks" class="solnetTests.AddTasksDataDrivenTest"/>
+        <method signature="LoginToTheApplicationTest.loginToTheApplication()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" name="loginToTheApplication" class="solnetTests.LoginToTheApplicationTest"/>
+        <method signature="MarkTaskCompleteTest.markTaskCompleteTest()[pri:0, instance:solnetTests.MarkTaskCompleteTest@55ca8de8]" name="markTaskCompleteTest" class="solnetTests.MarkTaskCompleteTest"/>
+        <method signature="ValidateLandingPageTest.validateLandingPage()[pri:0, instance:solnetTests.ValidateLandingPageTest@20d3d15a]" name="validateLandingPage" class="solnetTests.ValidateLandingPageTest"/>
+      </group> <!-- regression -->
+      <group name="addRemoveTask">
+        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
+      </group> <!-- addRemoveTask -->
+      <group name="smoke">
+        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
+        <method signature="LoginToTheApplicationTest.loginToTheApplication()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" name="loginToTheApplication" class="solnetTests.LoginToTheApplicationTest"/>
+        <method signature="MarkTaskCompleteTest.markTaskCompleteTest()[pri:0, instance:solnetTests.MarkTaskCompleteTest@55ca8de8]" name="markTaskCompleteTest" class="solnetTests.MarkTaskCompleteTest"/>
+        <method signature="ValidateLandingPageTest.validateLandingPage()[pri:0, instance:solnetTests.ValidateLandingPageTest@20d3d15a]" name="validateLandingPage" class="solnetTests.ValidateLandingPageTest"/>
+      </group> <!-- smoke -->
+      <group name="dataDriven">
+        <method signature="AddTasksDataDrivenTest.addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" name="addRemoveTasks" class="solnetTests.AddTasksDataDrivenTest"/>
+      </group> <!-- dataDriven -->
+    </groups>
+    <test started-at="2020-05-27T22:54:15 NZST" name="Test" finished-at="2020-05-27T22:55:35 NZST" duration-ms="79801">
+      <class name="solnetTests.AddRemoveTasksTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" started-at="2020-05-27T22:54:25 NZST" name="beforeMethod" finished-at="2020-05-27T22:54:33 NZST" duration-ms="7456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" started-at="2020-05-27T22:54:33 NZST" name="addRemoveTasks" finished-at="2020-05-27T22:54:35 NZST" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveTasks -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddRemoveTasksTest@214b199c]" started-at="2020-05-27T22:54:35 NZST" name="afterTest" finished-at="2020-05-27T22:54:36 NZST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- solnetTests.AddRemoveTasksTest -->
+      <class name="solnetTests.AddTasksDataDrivenTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:54:45 NZST" name="beforeMethod" finished-at="2020-05-27T22:54:53 NZST" duration-ms="7773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:54:53 NZST" name="addRemoveTasks" data-provider="createTasktestData" finished-at="2020-05-27T22:54:54 NZST" duration-ms="1234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[task1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[first task]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[05 June 2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveTasks -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:54:54 NZST" name="afterTest" finished-at="2020-05-27T22:54:55 NZST" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:54:55 NZST" name="beforeMethod" finished-at="2020-05-27T22:55:03 NZST" duration-ms="7664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:03 NZST" name="addRemoveTasks" data-provider="createTasktestData" finished-at="2020-05-27T22:55:04 NZST" duration-ms="1192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[task2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[second task]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Today]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveTasks -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:04 NZST" name="afterTest" finished-at="2020-05-27T22:55:04 NZST" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:04 NZST" name="beforeMethod" finished-at="2020-05-27T22:55:12 NZST" duration-ms="7479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:12 NZST" name="addRemoveTasks" data-provider="createTasktestData" finished-at="2020-05-27T22:55:13 NZST" duration-ms="822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[task3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[third task]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11 June 2020]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveTasks -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:13 NZST" name="afterTest" finished-at="2020-05-27T22:55:13 NZST" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:13 NZST" name="beforeMethod" finished-at="2020-05-27T22:55:21 NZST" duration-ms="7562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addRemoveTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:21 NZST" name="addRemoveTasks" data-provider="createTasktestData" finished-at="2020-05-27T22:55:22 NZST" duration-ms="987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[task4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[last task]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Today]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveTasks -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddTasksDataDrivenTest@2893de87]" started-at="2020-05-27T22:55:22 NZST" name="afterTest" finished-at="2020-05-27T22:55:24 NZST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- solnetTests.AddTasksDataDrivenTest -->
+      <class name="solnetTests.LoginToTheApplicationTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" started-at="2020-05-27T22:54:15 NZST" name="beforeTest" finished-at="2020-05-27T22:54:15 NZST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" started-at="2020-05-27T22:54:15 NZST" name="beforeMethod" finished-at="2020-05-27T22:54:24 NZST" duration-ms="8623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginToTheApplication()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" started-at="2020-05-27T22:54:24 NZST" name="loginToTheApplication" finished-at="2020-05-27T22:54:25 NZST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToTheApplication -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.LoginToTheApplicationTest@2b546384]" started-at="2020-05-27T22:54:25 NZST" name="afterTest" finished-at="2020-05-27T22:54:25 NZST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- solnetTests.LoginToTheApplicationTest -->
+      <class name="solnetTests.ValidateLandingPageTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.ValidateLandingPageTest@20d3d15a]" started-at="2020-05-27T22:54:36 NZST" name="beforeMethod" finished-at="2020-05-27T22:54:44 NZST" duration-ms="7558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validateLandingPage()[pri:0, instance:solnetTests.ValidateLandingPageTest@20d3d15a]" started-at="2020-05-27T22:54:44 NZST" name="validateLandingPage" finished-at="2020-05-27T22:54:44 NZST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLandingPage -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.ValidateLandingPageTest@20d3d15a]" started-at="2020-05-27T22:54:44 NZST" name="afterTest" finished-at="2020-05-27T22:54:45 NZST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- solnetTests.ValidateLandingPageTest -->
+      <class name="solnetTests.MarkTaskCompleteTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.MarkTaskCompleteTest@55ca8de8]" started-at="2020-05-27T22:55:24 NZST" name="beforeMethod" finished-at="2020-05-27T22:55:32 NZST" duration-ms="7999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="markTaskCompleteTest()[pri:0, instance:solnetTests.MarkTaskCompleteTest@55ca8de8]" started-at="2020-05-27T22:55:32 NZST" name="markTaskCompleteTest" finished-at="2020-05-27T22:55:35 NZST" duration-ms="2608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- markTaskCompleteTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.MarkTaskCompleteTest@55ca8de8]" started-at="2020-05-27T22:55:35 NZST" name="afterTest" finished-at="2020-05-27T22:55:35 NZST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- solnetTests.MarkTaskCompleteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Solnet_AngularTests -->
+</testng-results>

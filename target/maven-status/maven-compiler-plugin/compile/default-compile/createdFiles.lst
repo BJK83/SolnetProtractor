@@ -1,0 +1,8 @@
+com\Bhavin\Kurwa\Automation\Protractor_Solnet\App.class
+pageObjects\LandingPage.class
+pageObjects\TaskCheckPage.class
+pageObjects\LoginPage.class
+utilities\dataProvider.class
+utilities\helpers.class
+resources\Base.class
+utilities\Listeners.class
