@@ -67,6 +67,7 @@ public class LandingPage {
 
 		if (!taskDueDate.equalsIgnoreCase("Today")) {
 
+			selectDate(taskDueDate);
 		}
 
 		if (isImportant.equalsIgnoreCase("Yes")) {
@@ -159,6 +160,36 @@ public class LandingPage {
 			task.findElement(
 					By.xpath("//mat-icon[@class='remove-icon mat-icon notranslate material-icons mat-icon-no-color']"))
 					.click();
+		}
+	}
+	
+	public void selectDate(String date)
+	{
+		String[] splitDate  = date.split("-");
+		String month = splitDate[0];
+		String day = splitDate[1];
+		
+				
+		
+		driver.findElement(By.xpath("//mat-datepicker-toggle")).click();
+		
+		String displayedDate="";
+
+		boolean flag = false;
+		while(!flag)
+		{
+			displayedDate = driver.findElement(By.xpath("//*[@class='mat-calendar-period-button mat-button mat-button-base']")).getText();
+
+			ngDriver.waitForAngularRequestsToFinish();
+			if(displayedDate.contains(month))
+			{
+				driver.findElement(By.xpath("(//*[@class='mat-calendar-body-cell-content'])["+day+"]")).click();
+				flag = true;
+				break;
+
+			}
+			
+			driver.findElement(By.xpath("//*[@class='mat-calendar-next-button mat-icon-button mat-button-base']")).click();
 		}
 	}
 

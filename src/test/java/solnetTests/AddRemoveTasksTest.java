@@ -15,9 +15,9 @@ public class AddRemoveTasksTest extends Base {
 		landingPage = new LandingPage(driver, ngDriver);
 		loginPage.logon();
 		
-		landingPage.addTask( "task 1",  "task 1 Description",  "11 jun 2020",  "yes");
-		landingPage.addTask( "task 2",  "task 2 Description",  "11 jun 2020",  "yes");
-		landingPage.addTask( "task 3",  "task 3 Description",  "11 jun 2020",  "yes");
+		landingPage.addTask( "task 1",  "task 1 Description",  "JUN-18",  "yes");
+		landingPage.addTask( "task 2",  "task 2 Description",  "Today",  "yes");
+		landingPage.addTask( "task 3",  "task 3 Description",  "JUN-26",  "yes");
 		
 		
 		Thread.sleep(5);

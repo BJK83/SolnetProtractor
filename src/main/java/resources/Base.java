@@ -1,7 +1,9 @@
 package resources;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -30,15 +32,21 @@ public class Base {
 	public static TaskCheckPage taskCheckPage;
 
 	@BeforeMethod
-	public void beforeMethod()
+	public void beforeMethod() throws IOException
 	{
+		
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\utilities\\global.properties");
+		Properties prop=new Properties();
+		prop.load(fis);
+		String URL=(String) prop.get("url");
+		
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir")+"\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		JavascriptExecutor javaScriptDriver = (JavascriptExecutor) driver; 
 		ngDriver = new NgWebDriver(javaScriptDriver);
-		driver.get("http://localhost:4200/login");
+		driver.get(URL);
 		ngDriver.waitForAngularRequestsToFinish();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

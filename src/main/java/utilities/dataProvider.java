@@ -13,7 +13,7 @@ public class dataProvider {
 
 	@DataProvider(name = "createTasktestData")
 	public Iterator<Object[]> testData() throws IOException {
-		return parseCsvData(System.getProperty("user.dir")+"\\testdata.csv");
+		return parseCsvData(System.getProperty("user.dir")+"\\src\\main\\java\\utilities\\testdata.csv");
 	}
 
 	private Iterator<Object[]> parseCsvData(String fileName) throws IOException {
