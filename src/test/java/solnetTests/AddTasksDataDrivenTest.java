@@ -10,7 +10,7 @@ import utilities.dataProvider;
 public class AddTasksDataDrivenTest extends Base {
 
 	@Test(dataProvider = "createTasktestData", dataProviderClass = dataProvider.class,groups = { "dataDriven", "regression" })
-	public void addRemoveTasks(String taskName, String taskDescription, String taskDueDate, String isImportant) {
+	public void addRemoveTasksTest(String taskName, String taskDescription, String taskDueDate, String isImportant) {
 		loginPage = new LoginPage(driver, ngDriver);
 		landingPage = new LandingPage(driver, ngDriver);
 		loginPage.logon();

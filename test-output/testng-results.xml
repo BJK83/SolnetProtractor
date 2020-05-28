@@ -2,37 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-28T07:08:59 NZST" name="Default suite" finished-at="2020-05-28T07:09:31 NZST" duration-ms="31691">
+  <suite started-at="2020-05-28T12:05:21 NZST" name="Default suite" finished-at="2020-05-28T12:05:34 NZST" duration-ms="13217">
     <groups>
+      <group name="functional">
+        <method signature="ValidateImportantTasksTest.validateImportantTasksTest()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" name="validateImportantTasksTest" class="solnetTests.ValidateImportantTasksTest"/>
+      </group> <!-- functional -->
       <group name="regression">
-        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
+        <method signature="ValidateImportantTasksTest.validateImportantTasksTest()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" name="validateImportantTasksTest" class="solnetTests.ValidateImportantTasksTest"/>
       </group> <!-- regression -->
-      <group name="addRemoveTask">
-        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
-      </group> <!-- addRemoveTask -->
-      <group name="smoke">
-        <method signature="AddRemoveTasksTest.addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" name="addRemoveTasks" class="solnetTests.AddRemoveTasksTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2020-05-28T07:08:59 NZST" name="Default test" finished-at="2020-05-28T07:09:31 NZST" duration-ms="31691">
-      <class name="solnetTests.AddRemoveTasksTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" started-at="2020-05-28T07:08:59 NZST" name="beforeTest" finished-at="2020-05-28T07:08:59 NZST" duration-ms="16" status="PASS">
+    <test started-at="2020-05-28T12:05:21 NZST" name="Default test" finished-at="2020-05-28T12:05:34 NZST" duration-ms="13217">
+      <class name="solnetTests.ValidateImportantTasksTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" started-at="2020-05-28T12:05:21 NZST" name="beforeTest" finished-at="2020-05-28T12:05:21 NZST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" started-at="2020-05-28T07:09:00 NZST" name="beforeMethod" finished-at="2020-05-28T07:09:08 NZST" duration-ms="8774" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" started-at="2020-05-28T12:05:21 NZST" name="beforeMethod" finished-at="2020-05-28T12:05:30 NZST" duration-ms="8648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="addRemoveTasks()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" started-at="2020-05-28T07:09:08 NZST" name="addRemoveTasks" finished-at="2020-05-28T07:09:26 NZST" duration-ms="18161" status="PASS">
+        <test-method signature="validateImportantTasksTest()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" started-at="2020-05-28T12:05:30 NZST" name="validateImportantTasksTest" finished-at="2020-05-28T12:05:33 NZST" duration-ms="3524" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRemoveTasks -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.AddRemoveTasksTest@b9b00e0]" started-at="2020-05-28T07:09:26 NZST" name="afterTest" finished-at="2020-05-28T07:09:31 NZST" duration-ms="4674" status="PASS">
+        </test-method> <!-- validateImportantTasksTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:solnetTests.ValidateImportantTasksTest@47542153]" started-at="2020-05-28T12:05:33 NZST" name="afterTest" finished-at="2020-05-28T12:05:34 NZST" duration-ms="990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- solnetTests.AddRemoveTasksTest -->
+      </class> <!-- solnetTests.ValidateImportantTasksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

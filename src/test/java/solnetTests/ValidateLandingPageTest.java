@@ -13,7 +13,7 @@ import resources.Base;
 public class ValidateLandingPageTest extends Base {
 
 	@Test(groups = { "smoke","regression" })	
-	public void validateLandingPage() {
+	public void validateLandingPageTest() {
 		loginPage = new LoginPage(driver, ngDriver);
 		landingPage = new LandingPage(driver, ngDriver);
 

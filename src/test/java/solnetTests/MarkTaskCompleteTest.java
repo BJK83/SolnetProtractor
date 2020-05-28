@@ -18,14 +18,10 @@ public class MarkTaskCompleteTest extends Base{
 		
 		loginPage.logon();
 		
-		landingPage.addTask( "task 1",  "task 1 Description",  "Today",  "yes");
-		landingPage.addTask( "task 2",  "task 2 Description",  "Today",  "yes");
-		landingPage.addTask( "task 3",  "task 3 Description",  "Today",  "yes");
-		
-		
-		Thread.sleep(5);
 
-		taskCheckPage.markTaskComplete("task 1");
+		landingPage.addTasks();
+		
+		taskCheckPage.markTaskComplete("task 2");
 		
 	}
 

@@ -31,12 +31,12 @@ public class LandingPage {
 		this.ngDriver = ngDriver;
 	}
 
-	public void validateLandingPage() {
-
-		List<WebElement> allFields = driver.findElements(By.xpath("//app-nav-menu-item"));
-		String x = allFields.get(0).getText();
-
-	}
+//	public void validateLandingPage() {
+//
+//		List<WebElement> allFields = driver.findElements(By.xpath("//app-nav-menu-item"));
+//		String x = allFields.get(0).getText();
+//
+//	}
 
 	public List<WebElement> getnavigationListElements() {
 		return driver.findElements(navigationListElements);
@@ -117,7 +117,8 @@ public class LandingPage {
 
 						Actions action = new Actions(driver);
 						WebElement e = driver.findElement(By.xpath(
-								"(//mat-icon[@class='remove-icon mat-icon notranslate material-icons mat-icon-no-color'])["+deleteIndex+"]"));
+								"(//mat-icon[@class='remove-icon mat-icon notranslate material-icons mat-icon-no-color'])["
+										+ deleteIndex + "]"));
 						action.moveToElement(e).click().perform();
 
 						taskFound = true;
@@ -140,57 +141,42 @@ public class LandingPage {
 
 	}
 
-	public void deleteAllTasks() throws InterruptedException {
-		WebElement homePage = driver.findElement(By.className("home-page"));
-		List<WebElement> allTasks = homePage.findElements(By.xpath("//mat-card/mat-card-content"));
-		int size = allTasks.size();
 
-		for (int x = 0; x < size; x++) {
-			System.out.println(allTasks.get(x).getText());
-			allTasks.get(x)
-					.findElement(By.xpath(
-							"//mat-icon[@class='remove-icon mat-icon notranslate material-icons mat-icon-no-color']"))
-					.click();
-			ngDriver.waitForAngularRequestsToFinish();
-
-			Thread.sleep(2);
-		}
-
-		for (WebElement task : allTasks) {
-			task.findElement(
-					By.xpath("//mat-icon[@class='remove-icon mat-icon notranslate material-icons mat-icon-no-color']"))
-					.click();
-		}
-	}
-	
-	public void selectDate(String date)
-	{
-		String[] splitDate  = date.split("-");
+	public void selectDate(String date) {
+		String[] splitDate = date.split("-");
 		String month = splitDate[0];
 		String day = splitDate[1];
-		
-				
-		
+
 		driver.findElement(By.xpath("//mat-datepicker-toggle")).click();
-		
-		String displayedDate="";
+
+		String displayedDate = "";
 
 		boolean flag = false;
-		while(!flag)
-		{
-			displayedDate = driver.findElement(By.xpath("//*[@class='mat-calendar-period-button mat-button mat-button-base']")).getText();
+		while (!flag) {
+			displayedDate = driver
+					.findElement(By.xpath("//*[@class='mat-calendar-period-button mat-button mat-button-base']"))
+					.getText();
 
 			ngDriver.waitForAngularRequestsToFinish();
-			if(displayedDate.contains(month))
-			{
-				driver.findElement(By.xpath("(//*[@class='mat-calendar-body-cell-content'])["+day+"]")).click();
+			if (displayedDate.contains(month)) {
+				driver.findElement(By.xpath("(//*[@class='mat-calendar-body-cell-content'])[" + day + "]")).click();
 				flag = true;
 				break;
 
 			}
-			
-			driver.findElement(By.xpath("//*[@class='mat-calendar-next-button mat-icon-button mat-button-base']")).click();
+
+			driver.findElement(By.xpath("//*[@class='mat-calendar-next-button mat-icon-button mat-button-base']"))
+					.click();
 		}
+	}
+	
+	public void addTasks()
+	{
+		// Note - this can be implemented by reading JSon data, and iterating it to see
+		// how many tasks test data have important yes / no
+		addTask( "task 1",  "task 1 Description",  "JUN-18",  "yes");
+		addTask( "task 2",  "task 2 Description",  "Today",  "yes");
+		addTask( "task 3",  "task 3 Description",  "JUN-26",  "yes");
 	}
 
 }

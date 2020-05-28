@@ -9,7 +9,7 @@ import resources.Base;
 public class LoginToTheApplicationTest extends Base{
 	
 	@Test(groups = { "smoke","regression" })	
-	public void loginToTheApplication()
+	public void loginToTheApplicationTest()
 	{
 		loginPage = new LoginPage(driver,ngDriver);
 		

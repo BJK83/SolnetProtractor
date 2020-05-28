@@ -18,6 +18,8 @@ import org.testng.annotations.BeforeTest;
 
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
+import pageObjects.AllTasksPage;
+import pageObjects.ImportantTasksPage;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import pageObjects.TaskCheckPage;
@@ -30,6 +32,8 @@ public class Base {
 	public static LoginPage loginPage;
 	public static LandingPage landingPage;
 	public static TaskCheckPage taskCheckPage;
+	public static AllTasksPage allTasksPage;
+	public static ImportantTasksPage importantTasksPage;
 
 	@BeforeMethod
 	public void beforeMethod() throws IOException

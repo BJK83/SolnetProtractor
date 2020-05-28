@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="solnetTests.SpecificDate">
+      <class name="solnetTests.ValidateAllTasksPage">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="spdat"/>
+          <include name="validateAllTasksPage"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- solnetTests.SpecificDate -->
+      </class> <!-- solnetTests.ValidateAllTasksPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
