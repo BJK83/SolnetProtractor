@@ -8,7 +8,6 @@ chrome browser is uptodate (83.0.4103.61)
 
 In Progress Tasks:
 Bat file for npm start
-test scripting for validating all tasks and favourites
 implement logging log4j and ExtentReports
 
 Steps to run tests:
